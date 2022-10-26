@@ -17,21 +17,11 @@ module.exports = {
       required: true,
       message: "项目名"
     },
-    template: {
-      type: "select",
-      required: "true",
-      message: "Select a template",
-      initial: 1,
-      choices: [
-        { title: "React", value: "react" },
-        { title: "Vue", value: "vue" }
-      ]
-    },
     description: {
       type: "string",
       required: false,
       message: "项目描述",
-      default: "React/Vue 项目"
+      default: "React 项目"
     },
     author: {
       type: "string",
@@ -41,7 +31,7 @@ module.exports = {
     },
     // router: {
     //   type: "confirm",
-    //   message: "是否安装 react/vue-router？"
+    //   message: "是否安装 react-router-dom ？"
     // },
     // eslint: {
     //   type: "confirm",
